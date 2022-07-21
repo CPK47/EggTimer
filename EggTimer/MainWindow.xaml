@@ -1,0 +1,29 @@
+﻿<Window x:Class="EggTimer.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:EggTimer"
+        mc:Ignorable="d"
+        Title="CPK's Egg Timer" ResizeMode="NoResize" Height="460" Width="600" Foreground="Chocolate" Background="Aquamarine" FontSize="20">
+    <Grid>
+        <Grid HorizontalAlignment="Center" Height="450" VerticalAlignment="Center" Width="800">
+            <TextBlock HorizontalAlignment="Center" Margin="0,10,0,0" TextWrapping="Wrap" TextAlignment="Center" VerticalAlignment="Top" Height="59" Width="780"><Run FontWeight="Bold" FontSize="25" Text="Welcome to CPK's Egg Timer."/></TextBlock>
+            <TextBlock HorizontalAlignment="Center" Margin="0,40,0,0" TextWrapping="Wrap" TextAlignment="Center" VerticalAlignment="Top" Height="59" Width="780"><Run FontWeight="Bold" FontSize="18" Foreground="Black" Text="You'll hopefully never overcook an egg again. In theory..."/></TextBlock>
+            <Button x:Name="small" Content="Small" HorizontalAlignment="Left" Height="70" Margin="146,130,0,0" VerticalAlignment="Top" Width="166" Click="Size_Click"/>
+            <Button x:Name="medium" Content="Medium" HorizontalAlignment="Center" Height="70" Margin="0,130,0,0" VerticalAlignment="Top" Width="166" Click="Size_Click"/>
+            <Button x:Name="large" Content="Large" HorizontalAlignment="Left" Height="70" Margin="488,130,0,0" VerticalAlignment="Top" Width="166" Click="Size_Click"/>
+            <Button x:Name="softBoil" Content="Soft" HorizontalAlignment="Left" Height="70" Margin="146,254,0,0" VerticalAlignment="Top" Width="166" Click="BoilType_Click"/>
+            <Button x:Name="mediumBoil" Content="Medium" HorizontalAlignment="Center" Height="70" Margin="0,254,0,0" VerticalAlignment="Top" Width="166" Click="BoilType_Click"/>
+            <Button x:Name="hardBoil" Content="Hard" HorizontalAlignment="Left" Height="70" Margin="488,254,0,0" VerticalAlignment="Top" Width="166" Click="BoilType_Click"/>
+            <TextBlock HorizontalAlignment="Center" Height="31" Margin="0,96,0,0" TextWrapping="Wrap" TextAlignment="Center" VerticalAlignment="Top" Width="508"><Run Language="en-gb" FontWeight="Bold" Foreground="Black" Text="What size is your egg?"/></TextBlock>
+            <TextBlock HorizontalAlignment="Center" Height="31" Margin="0,220,0,0" TextWrapping="Wrap" TextAlignment="Center" VerticalAlignment="Top" Width="508"><Run Language="en-gb" FontWeight="Bold" Foreground="Black" Text="How would you like your egg boiled?"/></TextBlock>
+            <Button x:Name="reset" Content="Reset" HorizontalAlignment="Left" Height="70" Margin="146,338,0,0" Background="Red" Foreground="AntiqueWhite" VerticalAlignment="Top" Width="166" Click="Reset_Click"/>
+            <Button x:Name="start" Content="Start" HorizontalAlignment="Left" Height="70" Margin="488,338,0,0" Background="Green" Foreground="AntiqueWhite" VerticalAlignment="Top" Width="166" Click="Start_Click"/>
+            <Label x:Name="timer" Content="0" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" HorizontalAlignment="Center" Margin="0,338,0,0" FontSize="40" VerticalAlignment="Top" Width="166" Height="70"/>
+            <TextBlock HorizontalAlignment="Center" Height="29" Margin="0,395,0,0" TextWrapping="Wrap" Text="Seconds" TextAlignment="Center" FontWeight="Bold" Foreground="Black" VerticalAlignment="Top" Width="128" RenderTransformOrigin="0.5,0.547"/>
+
+        </Grid>
+
+    </Grid>
+</Window>
